@@ -12,9 +12,22 @@ const useStyles = MUI.makeStyles(theme => {
 const SubmitButton = props => {
   const classes = useStyles();
   const { onClick } = props;
+  const ref = React.useRef();
 
+  React.useEffect(() => {
+    const onKeyDown = e => {
+      if (e.key === "Enter") {
+        onClick();
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [onClick]);
   return (
     <MUI.Button
+      ref={ref}
       onClick={onClick}
       className={classes.submitButton}
       variant="contained"
