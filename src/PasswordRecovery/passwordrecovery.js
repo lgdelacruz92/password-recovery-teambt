@@ -1,5 +1,6 @@
 import React from "react";
 import * as MUI from "@material-ui/core";
+import TextFieldTeamBt from "textfield-teambt-fullwidth";
 
 const useStyles = MUI.makeStyles(theme => {
   return {
@@ -16,10 +17,9 @@ const useStyles = MUI.makeStyles(theme => {
 
 const PasswordRecovery = props => {
   const classes = useStyles();
-  const { children } = props;
   return (
     <MUI.Paper elevation={3} className={classes.passwordRecovery}>
-      {children}
+      <TextFieldTeamBt errorText="" />
     </MUI.Paper>
   );
 };

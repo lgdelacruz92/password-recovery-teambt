@@ -5,6 +5,4 @@ export default {
   title: "PasswordRecovery"
 };
 
-export const passwordRecovery = () => (
-  <PasswordRecovery>Hello</PasswordRecovery>
-);
+export const passwordRecovery = () => <PasswordRecovery />;
