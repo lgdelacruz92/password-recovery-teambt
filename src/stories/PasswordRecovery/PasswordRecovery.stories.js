@@ -5,4 +5,6 @@ export default {
   title: "PasswordRecovery"
 };
 
-export const passwordRecovery = () => <PasswordRecovery />;
+export const passwordRecovery = () => (
+  <PasswordRecovery onClick={form => console.log(form)} />
+);
