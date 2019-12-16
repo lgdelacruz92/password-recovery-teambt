@@ -6,5 +6,8 @@ export default {
 };
 
 export const passwordRecovery = () => (
-  <PasswordRecovery onClick={form => console.log(form)} />
+  <PasswordRecovery
+    successMessage="Success"
+    onClick={form => console.log(form)}
+  />
 );

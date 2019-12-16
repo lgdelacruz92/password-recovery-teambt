@@ -2,6 +2,7 @@ import React from "react";
 import * as MUI from "@material-ui/core";
 import EmailTextField from "@bit/lgdelacruz92.team-bt.emailtextfield";
 import SubmitButton from "./SubmitButton";
+import SuccessMessage from "./SuccessMessage";
 
 const useStyles = MUI.makeStyles(theme => {
   return {
@@ -21,9 +22,10 @@ const PasswordRecovery = props => {
   const [formState, setFormState] = React.useState({
     email: ""
   });
-  const { onClick } = props;
+  const { onClick, successMessage } = props;
   return (
     <MUI.Paper elevation={3} className={classes.passwordRecovery}>
+      <SuccessMessage>{successMessage}</SuccessMessage>
       <EmailTextField
         onChange={value => setFormState({ ...formState, email: value })}
       />
