@@ -1,7 +1,8 @@
 {
   "name": "password-recovery-teambt",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/index.js",
+  "license": "MIT",
   "dependencies": {
     "@bit/lgdelacruz92.team-bt.emailtextfield": "^0.0.1",
     "@material-ui/core": "^4.8.0",
@@ -41,7 +42,16 @@
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-links": "^5.2.8",
     "@storybook/addons": "^5.2.8",
-    "@storybook/react": "^5.2.8"
+    "@storybook/react": "^5.2.8",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "rollup": "^1.27.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-paths": "^0.0.4"
   },
   "bit": {
     "env": {
