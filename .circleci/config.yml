@@ -29,8 +29,8 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run: npm config set '@bit:registry' https://node.bit.dev
       - run: npm install
-      - run: npm i @bit/lgdelacruz92.team-bt.emailtextfield
 
       - save_cache:
           paths:
