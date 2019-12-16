@@ -30,6 +30,7 @@ jobs:
             - v1-dependencies-
 
       - run: npm install
+      - run: npm i @bit/lgdelacruz92.team-bt.emailtextfield
 
       - save_cache:
           paths:
