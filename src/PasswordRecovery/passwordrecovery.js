@@ -1,6 +1,6 @@
 import React from "react";
 import * as MUI from "@material-ui/core";
-import EmailTextField from "./EmailTextfield";
+import EmailTextField from "@bit/lgdelacruz92.team-bt.emailtextfield";
 import SubmitButton from "./SubmitButton";
 
 const useStyles = MUI.makeStyles(theme => {

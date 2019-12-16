@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bit/lgdelacruz92.team-bt.emailtextfield": "^0.0.1",
     "@material-ui/core": "^4.8.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -54,6 +55,7 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "textfield-teambt-fullwidth": "^0.1.1",
-    "validate-email-password": "^1.0.0"
+    "validate-email-password": "^1.0.0",
+    "@bit/lgdelacruz92.team-bt.emailtextfield": "^0.0.1"
   }
 }
